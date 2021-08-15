@@ -1,0 +1,39 @@
+---
+title: 'My Second Year Commencement '
+author: Avi Virrendra Parmar
+date: '2021-08-15'
+slug: []
+categories:
+  - R
+  - tidygraph
+  - ggraph
+  - ggforce
+tags:
+  - second year
+image: 'img/portfolio/walkman 7.png'
+showonlyimage: true
+---
+
+
+# Introduction
+
+My second year began with a bang! Here is a picture of me doing some funky stuff.
+
+```{r}
+library(tidygraph)
+library(ggraph)
+library (tidygraph)
+
+library (igraph)
+library(igraphdata)
+```
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ajymCGs2jlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+```{r}
+ data(karate)
+karate
+
+karate %>% ggraph(., layout = "graphopt") + geom_edge_link0() + geom_node_point()
+```
+
+
